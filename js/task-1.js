@@ -3,7 +3,7 @@
 ================================================== */
 
 const categories = document.querySelectorAll("#categories > li.item");
-console.log(`Categories length: ${categories.length}`);
+console.log(`Number of categories: ${categories.length}`);
 
 /* ==================================================
 Для кожного елемента li.item у списку ul#categories 
@@ -17,5 +17,5 @@ categories.forEach((category) => {
   console.log(`Category: ${header}`);
   // знаходимо всі ел. li всередині кожної категорії(кільк.ел. у консоль)
   const item = category.querySelectorAll("ul > li");
-  console.log(`Length: ${item.length}`);
+  console.log(`Elements: ${item.length}`);
 });
