@@ -8,48 +8,12 @@
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-  display: block;
 }
 
 /* Reset list styles */
 ol,
 ul {
   list-style: none;
-}
-
-/* Reset table styles */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Remove default blockquote styles */
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: "";
-  content: none;
 }
 
 /* Reset form elements */
@@ -62,24 +26,9 @@ select {
   line-height: inherit;
 }
 
-/* Remove default fieldset and legend styles */
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-legend {
-  padding: 0;
-}
-
 /* ==================================================
 
 ================================================== */
-
-* {
-  box-sizing: border-box;
-}
 
 body {
   margin: 16px;
@@ -143,4 +92,22 @@ li > ul > li {
   border-radius: 4px;
   width: 360px;
   color: #2e2f42;
+}
+/* ==================================================
+ TASK-2
+ ================================================== */
+
+.gallery {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  width: 100vw;
+  max-width: 1128px;
+}
+.gallery-image {
+  object-fit: cover;
+  width: 360px;
+  height: 300px;
 }
