@@ -39,6 +39,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 /* ==================================================
  TASK-1
@@ -71,7 +72,6 @@ h2 {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;
-  letter-spacing: 0.04em;
   color: #2e2f42;
 }
 ul {
@@ -83,10 +83,6 @@ ul {
   width: 360px;
 }
 li > ul > li {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   padding: 8px 16px;
   border: 1px solid #808080;
   border-radius: 4px;
@@ -125,24 +121,23 @@ TASK-3
   height: 40px;
   background: #fff;
 }
+#name-input:hover {
+  border: 1px solid #000;
+}
 
 h1 {
   font-weight: 600;
   font-size: 24px;
   margin-top: 16px;
   line-height: 1.33;
-  letter-spacing: 0.04em;
   color: #2e2f42;
 }
 
 placeholder {
   font-weight: 400;
-  font-size: 16px;
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #2e2f42;
 }
 
@@ -163,9 +158,6 @@ TASK-4
   flex-direction: column;
   width: 360px;
   height: 72px;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.04em;
   color: #2e2f42;
 }
 .login-form input {
@@ -175,6 +167,9 @@ TASK-4
   border-radius: 4px;
   width: 360px;
   height: 40px;
+}
+.login-form input:hover {
+  border: 1px solid #000;
 }
 .login-form button {
   display: flex;
@@ -188,10 +183,10 @@ TASK-4
   height: 40px;
   background: #4e75ff;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #fff;
+}
+.login-form button:hover {
+  background: #6c8cff;
 }
 
 /* ==================================================
@@ -210,10 +205,6 @@ TASK-5
   background: #fff;
 }
 p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #2e2f42;
 }
 .change-color {
@@ -229,10 +220,10 @@ p {
   height: 40px;
   background: #4e75ff;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #fff;
+}
+.change-color:hover {
+  background: #6c8cff;
 }
 
 /* ==================================================
@@ -245,25 +236,54 @@ TASK-6
   flex-direction: row;
   gap: 16px;
   border-radius: 8px;
-  padding: 24px;
-  width: 534px;
-  height: 302px;
-  background: #fff;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background: #f6f6fe;
+  margin-bottom: 16px;
 }
 #controls input {
   border: 1px solid #808080;
   border-radius: 8px;
-  padding: 8px 72px;
+  padding: 8px 40px;
   width: 150px;
   height: 40px;
+  text-align: center;
 }
+
+#controls input:hover {
+  border: 1px solid #000;
+}
+
 #controls button {
   border-radius: 8px;
   padding: 8px 16px;
   width: 120px;
   height: 40px;
+  font-weight: 500;
+  color: #fff;
   background: #4e75ff;
 }
+#controls button:hover {
+  background: #6c8cff;
+}
+
 #controls button:last-child {
   background: #ff4e4e;
+}
+#controls button:last-child:hover {
+  background: #ff7070;
+}
+#boxes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  min-height: 134px;
+  background: #f6f6fe;
 }

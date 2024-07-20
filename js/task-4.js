@@ -1,14 +1,13 @@
-form.addEventListener("submit", (event) => {
+const form = document.querySelector(".login-form");
+const onFormSubmit = (event) => {
   event.preventDefault(); // перезавантаження сторінки
 
   const email = form.elements.email.value.trim(); // очищаємо від пробілів по краях trim()
   const password = form.elements.password.value.trim();
 
   if (email === "" || password === "") {
-    alert("All form fields must be filled in"); // у формі є незаповнені поля, виводь alert
-    return;
+    return alert("All form fields must be filled in"); // у формі є незаповнені поля, виводь alert
   }
-
   const formData = {
     email: email,
     password: password,
@@ -17,4 +16,5 @@ form.addEventListener("submit", (event) => {
   console.log(formData);
 
   form.reset(); // Очищуємо форму
-});
+};
+form.addEventListener("submit", onFormSubmit);
