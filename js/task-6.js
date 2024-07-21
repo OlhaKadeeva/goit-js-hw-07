@@ -9,6 +9,7 @@ function createBoxes(amount) {
   // Очищення контейнера перед додаванням нових елементів
   boxesContainer.innerHTML = "";
 
+  const fragment = document.createDocumentFragment(); //Створення об'єкта fragment
   let size = 30;
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
@@ -16,9 +17,10 @@ function createBoxes(amount) {
     box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
     box.style.marginBottom = "5px";
-    boxesContainer.appendChild(box);
+    fragment.appendChild(box);
     size += 10;
   }
+  boxesContainer.appendChild(fragment); //додавання fragment до контейнера boxes за одну операцію
 }
 
 // Функція для очищення колекції елементів
